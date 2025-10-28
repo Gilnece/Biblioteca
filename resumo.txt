@@ -1,0 +1,35 @@
+Resumo da solução
+
+Sistema web multi-unidade (bibliotecas por unidade) com:
+
+Catálogo público responsivo
+
+Área do leitor (conta, empréstimos, reservas)
+
+Balcão de atendimento para operações manuais
+
+Painel administrativo por unidade (CRUD, regras, relatórios)
+
+Super Admin global para personalização da marca e configurações
+
+Stack recomendado (pronto para produção)
+
+Backend: Node.js + TypeScript + NestJS (ou Express + TypeScript)
+
+Banco: PostgreSQL
+
+Cache/Jobs: Redis + BullMQ (tarefas: notificações, lembretes, geração de relatórios)
+
+Autenticação: JWT + refresh tokens; integração com OAuth2 (opcional)
+
+Frontend Público + Painéis: React + TypeScript + Vite + Tailwind CSS
+
+PDFs/etiquetas: Puppeteer / PDFKit (servidor) ou geração no frontend para imprimir direto
+
+Armazenamento de arquivos: S3 (AWS) ou MinIO (self-hosted)
+
+Infra / deploy: Docker + docker-compose / Kubernetes, backups via dump do PostgreSQL para S3
+
+Observabilidade: Sentry (erros), Prometheus/Grafana (monitor), logs estruturados (JSON)
+
+Testes: Jest (backend), React Testing Library (frontend)

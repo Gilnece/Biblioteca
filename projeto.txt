@@ -1,0 +1,71 @@
+Construir um sistema web completo para gestão de bibliotecas, com catálogo público, área do usuário, 
+balcão de atendimento e painel administrativo, além de um painel Super Admin para personalização de marca
+ (logotipo, nome, cores) e configurações globais.
+
+Principais funcionalidades:
+
+1) Catálogo público
+
+• Busca por título, autor, assunto, ISBN e palavras-chave.
+• Filtros por disponibilidade, categoria, unidade e ano.
+• Página do item com detalhes, exemplares, status (disponível/emprestado) e capa.
+
+2) Área do usuário (leitor)
+
+• Cadastro/login e recuperação de senha.
+• Visualizar empréstimos, histórico e pendências.
+• Reserva de obras com confirmação e prazo.
+
+3) Atendimento (balcão)
+
+• Busca rápida de leitor e obra.
+• Empréstimo, devolução, renovação.
+• Comprovante de empréstimo (visualizar/baixar/imprimir).
+• Impressão de etiquetas (livros e carteirinhas) em layout simples.
+
+4) Painel administrativo (por unidade)
+
+• CRUD de obras, exemplares, autores, categorias.
+• Cadastro de unidades/bibliotecas (número variável).
+• Perfis e permissões (admin, bibliotecário, atendente, leitor).
+• Regras: prazos, limites, multas, bloqueios por atraso e feriados.
+• Relatórios (empréstimos por período, mais lidos, reservas, atrasos, acervo por categoria/unidade) com exportação CSV/PDF.
+• Registro de atividades (log/auditoria).
+
+5) Comunicação
+
+• Avisos de reserva disponível e lembretes de devolução/atraso (e-mail/tela).
+• Páginas institucionais básicas (sobre, contato, políticas).
+
+6) Super Admin (global)
+
+• Personalização de marca: logotipo, nome do sistema, paleta de cores/tema e favicon.
+• Textos padrão: título/subtítulo da home pública, rodapé, links sociais.
+• Configurações globais: idioma, fuso horário, formatos de data/hora.
+• Templates de e-mail (assunto/corpo editáveis, variáveis simples).
+• Gestão de unidades (criar/editar/remover) e atribuição de administradores locais.
+• Campos customizáveis (ex.: adicionar campo “Coleção” no cadastro de obras).
+• Upload de identidade visual (logotipo claro/escuro) e arquivo CSS adicional (opcional).
+• Tela de status do sistema (versão, checks básicos) e backup manual do banco (dump).
+
+Requisitos de qualidade:
+
+• Desempenho para grande volume (até ~2.000.000 de títulos e ~1.000.000 de usuários).
+• Responsivo (mobile-first) e acessível (contraste, alt text, navegação por teclado).
+• Segurança & LGPD: hash de senhas, controle de acesso por perfil, política de privacidade e termos.
+• UX clara: validações e mensagens objetivas.
+• SEO básico no catálogo (metadados e URLs amigáveis).
+
+Entregáveis:
+
+• Sistema completo (catálogo, área do usuário, balcão, painel admin e Super Admin).
+• Código-fonte em repositório Git com histórico de commits.
+• README com instalação, configuração (.env) e deploy.
+• Usuários de exemplo (superadmin/admin/bibliotecário/atendente/leitor) e dados fictícios.
+• Documentação curta de operação (como configurar marca, regras e permissões).
+• Geração de PDF (comprovantes/relatórios) e CSV funcionando.
+
+OBS: Caso identifique que você nem leu o escopo, não irei perder tempo respondendo
+
+
+
